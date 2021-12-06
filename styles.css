@@ -65,6 +65,9 @@ hr {
 
 /* --------------------------------------------- Navbar */
 
+.nav-stack {
+  cursor: pointer;
+}
 .nav-items {
   margin-right: 15px;
   padding-top: 50px;
@@ -95,6 +98,7 @@ nav {
 /* Nav bar active */
 
 .nav-menu li {
+  cursor: pointer;
   line-height: 2;
   font-size: 20px;
   font-weight: 200;
@@ -162,6 +166,8 @@ nav {
   background-size: cover;
   color: white;
   transition: all 0.5s cubic-bezier(0.54, -0.14, 0.52, 0.99);
+  position: relative;
+  z-index: 5;
 }
 
 .landing-container {

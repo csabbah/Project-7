@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Personal Project 7</title>
   </head>
   <body>
@@ -43,24 +44,34 @@
       </nav>
 
       <div class="landing-container">
-        <h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
           Landing<br />
           page website design template
         </h1>
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1300">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
           dolore, sed rerum iste nemo ipsum ducimus veniam molestiae perferendis
           eaque?
         </p>
-        <div class="image-square">
+        <div class="image-square" data-aos="fade-left" data-aos-duration="1300">
           <img src="https://i.imgur.com/tOloTFj.png" alt="" />
         </div>
-        <button class="button-sm">Get Started</button>
+        <button
+          class="button-sm"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          Get Started
+        </button>
       </div>
     </section>
 
     <section class="features">
-      <div class="features-container">
+      <div
+        class="features-container"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <h1>Features</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
@@ -68,7 +79,13 @@
           itaque magnam illo nostrum praesentium dolore vel hic non?
         </p>
       </div>
-      <div class="features-photo-container">
+      <div
+        class="features-photo-container"
+        data-aos="fade-down"
+        data-aos-duration="700"
+        data-aos-delay="200"
+      >
+        <div></div>
         <div class="features-single-item">
           <div class="image">
             <img src="https://i.imgur.com/tOloTFj.png" alt="" />
@@ -95,7 +112,7 @@
       </div>
     </section>
 
-    <section class="get-started">
+    <section class="get-started" data-aos="flip-up" data-aos-duration="1500">
       <div class="get-started-box">
         <h2>Lorem ipsum dolor sit amet</h2>
         <div class="box-body">
@@ -112,7 +129,7 @@
       </div>
     </section>
 
-    <section class="main-body">
+    <section class="main-body" data-aos="zoom-out-up" data-aos-duration="750">
       <div class="body-inner-container">
         <div class="main-container1">
           <h1>Lorrem Ipsum</h1>
@@ -157,7 +174,7 @@
       </div>
     </section>
 
-    <div class="gallery2">
+    <div class="gallery2" data-aos="zoom-out-left" data-aos-duration="750">
       <button class="left"><i class="fas fa-chevron-left"></i></button>
       <div class="inner-container">
         <span class="galleryTwoImage image-one">
@@ -176,7 +193,11 @@
     <section class="gallery1">
       <h1>Gallery</h1>
 
-      <ul class="gallery-container">
+      <ul
+        class="gallery-container"
+        data-aos="zoom-out-left"
+        data-aos-duration="750"
+      >
         <li>
           <div class="single-image">
             <img src="https://i.imgur.com/tOloTFj.png" alt="" />
@@ -194,7 +215,11 @@
         </li>
       </ul>
 
-      <div class="outer-image-container">
+      <div
+        class="outer-image-container"
+        data-aos="zoom-out-right"
+        data-aos-duration="750"
+      >
         <div class="outer-image">
           <h5 class="h5-top">LOREM IPSUM</h5>
           <div class="single-image-outer">
@@ -233,7 +258,13 @@
     <section class="articles">
       <h1>Articles</h1>
       <div class="articles-container">
-        <div class="article1">
+        <div
+          class="article1"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+        >
           <h2>Lorem Ipsum</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit agsdfa oins
@@ -243,7 +274,13 @@
             <img src="https://i.imgur.com/tOloTFj.png" alt="" />
           </div>
         </div>
-        <div class="article2">
+        <div
+          class="article2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <h2>Lorem Ipsum</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit agsdfa oins
@@ -256,7 +293,7 @@
       </div>
     </section>
 
-    <section class="get-started">
+    <section class="get-started" data-aos="flip-up" data-aos-duration="1500">
       <div class="get-started-box">
         <h2>Lorem ipsum dolor sit amet</h2>
         <div class="box-body">
@@ -274,7 +311,12 @@
     </section>
 
     <footer>
-      <div class="footer-top-container">
+      <div
+        class="footer-top-container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="500"
+      >
         <div class="footer-logo">
           <div class="footer-container">
             <div class="footer-circle"></div>
@@ -316,7 +358,11 @@
         </div>
       </div>
 
-      <section class="get-started-footer">
+      <section
+        class="get-started-footer"
+        data-aos="flip-up"
+        data-aos-duration="1500"
+      >
         <div class="get-started-box">
           <h2>Lorem ipsum dolor sit amet</h2>
           <div class="box-body">
@@ -336,5 +382,9 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

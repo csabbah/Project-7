@@ -1,3 +1,12 @@
+const root = document.querySelector('body');
+
+// On page load (or when you hit refresh), scroll to the very top
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
+
+
 $('.nav-stack').click(function(){ // On nav-stack click - add class of active to landing page
     $('.landing').toggleClass('active') // This pushes the window down 
 })
@@ -6,7 +15,7 @@ $('.nav-stack').click(function(){ // On nav-stack click - add class of active to
 
 var $container = $("html,body"); // current view
 var $scrollToFeatures = $('.features'); // target scroll
-var $scrollToGallery = $('.gallery'); // target scroll
+var $scrollToGallery = $('.gallery1'); // target scroll
 var $scrollToArticle = $('.articles'); // target scroll
  
 $('.features-item').click(function(){
@@ -28,7 +37,7 @@ $('.article-item').click(function(){
 window.addEventListener("scroll", ()=> { // When you scroll down, close the nav menu
     const scroll = Math.ceil(this.scrollY);  
 
-    if (scroll > 125) { // Once you exceed 150, remove the class of active from the landing page
+    if (scroll > 100) { // Once you exceed 150, remove the class of active from the landing page
         $('.landing').removeClass('active') 
     }
 });
@@ -65,7 +74,6 @@ buttonRight.addEventListener('click',()=> {
             item.style.transform = `translateX(${i}px)`
         })
     }
-    console.log(activeSlide, images.length)
 })
 
 buttonLeft.addEventListener('click',()=> {
@@ -79,6 +87,4 @@ buttonLeft.addEventListener('click',()=> {
             item.style.transform = `translateX(${i}px)`
         })
     }
-    console.log(activeSlide, images.length)
-
 })
